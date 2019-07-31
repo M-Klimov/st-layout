@@ -27,27 +27,35 @@ header
             align-items: center
             justify-content: space-between
             .toggle
-                margin-right: 1rem
-            .like:before
-                content: ''
-                display: inline-block
-                height: 1.636rem
-                width: 1.8rem
-                margin: 0 0.95rem -0.2rem 0
-                background: url('../img/icons/like.svg') no-repeat top right
-            .dislike:before
-                content: ''
-                display: inline-block
-                height: 1.636rem
-                width: 1.8rem
-                margin: 0 0.95rem -0.4rem 0
-                background: url('../img/icons/like.svg') no-repeat top right
-                transform: rotate(180deg)
-            .star:before
-                content: ''
-                display: inline-block
-                height: 1.712rem
-                width: 1.8rem
-                margin: 0 0.95rem -0.2rem 0
-                background: url('../img/icons/star.svg') no-repeat top right
+                &:first-child
+                    margin-right: 1rem
+                &:nth-child(2)
+                    margin-right: auto
+            .like
+                margin-right: .9rem
+                &:before
+                    content: ''
+                    display: inline-block
+                    height: 1.636rem
+                    width: 1.8rem
+                    margin: 0 .95rem -0.2rem 0
+                    background: url('../img/icons/like.svg') no-repeat top right
+            .dislike
+                margin-right: .9rem
+                &:before
+                    content: ''
+                    display: inline-block
+                    height: 1.636rem
+                    width: 1.8rem
+                    margin: 0 .95rem -0.4rem 0
+                    background: url('../img/icons/like.svg') no-repeat top right
+                    transform: rotate(180deg)
+            .star
+                &:before
+                    content: ''
+                    display: inline-block
+                    height: 1.712rem
+                    width: 1.8rem
+                    margin: 0 .95rem -0.2rem 0
+                    background: url('../img/icons/star.svg') no-repeat top right
 
