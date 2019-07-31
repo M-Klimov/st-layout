@@ -1,0 +1,68 @@
+.comment
+    display: flex
+    flex-direction: row
+    font-size: 1.2rem
+    color: $dark-color
+    .face
+        border-radius: 50%
+        height: 50px
+        width: 50px
+        margin-right: 1.1rem
+    .username
+        color: $primary-color
+        font-size: 1.4rem
+        font-weight: 600
+    .comment-test
+        margin: .8rem 0 1.6rem 0
+        line-height: 150%
+    .like
+        &:before
+            content: ''
+            display: inline-block
+            height: 1.636rem
+            width: 1.8rem
+            margin: 0 .5rem -0.2rem 0
+            background: url('../img/icons/like-green.svg') no-repeat top right
+    .dislike
+        &:before
+            content: ''
+            display: inline-block
+            height: 1.636rem
+            width: 1.8rem
+            margin: 0 .5rem -0.4rem 0
+            background: url('../img/icons/dislike-red.svg') no-repeat top right
+    .heart
+        &:before
+            content: ''
+            display: inline-block
+            height: 1.674em
+            width: 2.5rem
+            margin-bottom: -0.2rem
+            background: url('../img/icons/heart.svg') no-repeat top right
+    .date
+        &:before
+            content: ''
+            display: inline-block
+            height: 1.674em
+            width: 2.5rem
+            margin: 0 .89rem -0.5rem 0
+            background: url('../img/icons/date.svg') no-repeat top right
+    .reply:hover, .respones-companis:hover, .respones-users:hover
+        cursor: pointer
+    .circle
+        &:before
+            content: ''
+            display: inline-block
+            height: 1.5rem
+            width: .5rem
+            margin: 0 1.2rem -0.8rem 1.2rem
+            background: url('../img/icons/circle.svg') no-repeat top right
+    .date, .reply, .row:last-child
+        color: $grey-color
+        font-weight: 600
+    .row:nth-child(2)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 1.2rem
+    
