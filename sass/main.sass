@@ -2,6 +2,7 @@
 @import 'colors'
 @import 'fonts'
 @import 'modules/header'
+@import 'modules/footer'
 @import 'components/toggle'
 
 html
@@ -12,3 +13,12 @@ body
     color: $dark-color
     font-family: 'Inter'
     font-size: 1.4rem
+    overflow-y: hidden
+
+a
+    text-decoration: none
+    color: $white-color
+
+.content
+    height: calc(100vh - 152px - 90px)
+    overflow-y: scroll
