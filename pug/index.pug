@@ -11,8 +11,19 @@ html(lang="ru")
 
         .content
             .tabs
+                span.tab.active Положительные
+                span.tab Отрицательные
+                span.tab Спам
             .comments
-                include comment
+                .tab-content
+                    include comment
+                    include comment
+                    include comment
+                .tab-content
+                    include comment
+                    include comment
+                .tab-content
+                    include comment
 
             span.button-outline#show-more Показать больше
 
