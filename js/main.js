@@ -27,7 +27,7 @@ document.querySelector('.tabs').onclick = function(event) {
 
 function showTabContent(position) {
     if (tabContent[position].classList.contains('hide')) {
-        hideTabsContent(0);
+        hideTabContentFrom(0);
         tab[position].classList.add('active');
         tabContent[position].classList.remove('hide');
         tabContent[position].classList.add('show');
