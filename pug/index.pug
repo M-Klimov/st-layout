@@ -7,7 +7,7 @@ html(lang="ru")
         title Document
         link(href="./css/styles.min.css", rel="stylesheet")
     body
-        include header
+        include modules/header
 
         .content
             .tabs
@@ -16,17 +16,16 @@ html(lang="ru")
                 span.tab Спам
             .comments
                 .tab-content
-                    include comment
-                    include comment
-                    include comment
+                    include components/comment
+                    include components/comment
+                    include components/comment
                 .tab-content
-                    include comment
-                    include comment
+                    include components/comment
+                    include components/comment
                 .tab-content
-                    include comment
-
+                    include components/comment
             span.button-outline#show-more Показать больше
 
-        include footer
+        include modules/footer
 
         script(src="./js/main.min.js")
