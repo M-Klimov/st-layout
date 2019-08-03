@@ -1,6 +1,13 @@
 header
     background: linear-gradient(111.34deg, $black-color -10.47%, $darkcherry-color 96.06%)
     color: $white-color
+    .menu
+        margin-left: 2rem
+        height: 1.8rem
+        width: 0.4rem
+        background: url('../img/icons/menu.svg')
+        cursor: pointer
+        display: inline-block
     .header
         &-top
             padding: 3rem 2rem 1.7rem 3rem
@@ -16,12 +23,6 @@ header
                 border-radius: 50%
                 height: 35px
                 width: 35px
-            .menu
-                margin-left: 2rem
-                height: 1.8rem
-                width: 0.4rem
-                background: url('../img/icons/menu.svg')
-                cursor: pointer
             .button
                 border: 1px solid transparent
                 &:hover
@@ -103,3 +104,7 @@ header
                 display: flex
                 justify-content: space-between
                 align-items: center
+            .menu
+                position: fixed
+                right: 2.7rem
+                top: 2.7rem
