@@ -2,12 +2,14 @@
 @import 'colors'
 @import 'fonts'
 @import 'warning'
+@import 'review'
 @import 'modules/header'
 @import 'modules/footer'
 @import 'components/toggle'
 @import 'components/comment'
 @import 'components/button'
 @import 'components/tabs'
+@import 'components/input'
 
 html
     font-size: 10px
@@ -26,6 +28,10 @@ a
 .content
     height: calc(100vh - 152px - 90px)
     overflow-y: scroll
+    &-mini
+        height: calc(100vh - 70px - 90px - 5.4rem)
+        overflow-y: scroll
+        padding: 3rem 2.5rem 2.9rem 2.5rem
 
 .comments
     padding: 2.2rem 4.2rem 0 2.5rem

@@ -1,0 +1,4 @@
+.content-review {
+  height: calc(100vh - 70px - 90px);
+  overflow-y: scroll;
+  padding: 3rem 2.5rem 2.9rem 2.5rem; }
