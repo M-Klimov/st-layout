@@ -35,9 +35,9 @@ function showTabContent(position) {
 }
 
 //Timer for registration
-const sendSms = document.querySelectorAll('.send-sms');
-for (let i = 0; i < sendSms.length; i++) {
-    sendSms[i].onclick = function(event) {
+const sendCode = document.querySelectorAll('.send-code');
+for (let i = 0; i < sendCode.length; i++) {
+    sendCode[i].onclick = function(event) {
         const target = event.target;
         let seconds = 60;
 
