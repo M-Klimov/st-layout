@@ -33,3 +33,28 @@ function showTabContent(position) {
         tabContent[position].classList.add('show');
     }
 }
+
+//Timer for registration
+const sendCode = document.querySelectorAll('.send-code');
+for (let i = 0; i < sendCode.length; i++) {
+    sendCode[i].onclick = function(event) {
+        const target = event.target;
+        let seconds = 60;
+
+        if (target.classList !== 'button active') {
+            target.classList = 'button active';
+
+            var seconds_timer_id = setInterval(function() {
+                if (seconds > 0) {
+                    seconds--;
+                    if (seconds < 10) {
+                        seconds = "0" + seconds;
+                    }
+                    target.innerHTML = `Отправить повторно 0:${seconds}`;
+                } else {
+                    clearInterval(seconds_timer_id);
+                }
+            }, 1000);
+        }
+    }
+}
