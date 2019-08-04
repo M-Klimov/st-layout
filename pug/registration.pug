@@ -24,13 +24,13 @@ html(lang="ru")
 
             .tab-content
                 .row
-                    input(type="text", placeholder="Логин").input
-                    input(type="email", placeholder="Почта").input
+                    input(type="text", placeholder="Логин").input.success
+                    input(type="email", placeholder="Почта").input.success
 
-                input(type="phone", placeholder="Телефон").input
-                input(type="password", placeholder="Пароль").input#password1
+                input(type="phone", placeholder="Телефон").input.success
+                input(type="password", placeholder="Пароль").input#password1.error
                 span.eye#password1
-                input(type="password", placeholder="Повторить пароль").input#password2
+                input(type="password", placeholder="Повторить пароль").input#password2.error
                 span.eye#password2
 
                 .row.phone-code
