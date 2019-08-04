@@ -7,4 +7,4 @@
 * Review [review.html](review.html)
 * Review (no auth) [review-no-auth.html](review-no-auth.html)
 * Setting [setting.html](setting.html)
-* Warning [Warning.html](Warning.html)
+* Warning [warning.html](warning.html)
