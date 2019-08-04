@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Review
+        link(href="./css/styles.min.css", rel="stylesheet")
+    body
+        header
+            .header-mini.header-mini-no-auth
+                span.back
+                span.review-auth-title Отзыв о странице
+                span.url Land-book.com
+
+        .content-mini.review
+            textarea(rows="12",placeholder="Текст сообщения").input
+            .row
+                span.button-outline.button-outline-file Прикрепить файл
+                p Формат PNG, JPEG размером не более 1600х1600 px
+            span.button Отправить
+
+        include modules/footer
+
+        script(src="./js/main.min.js")

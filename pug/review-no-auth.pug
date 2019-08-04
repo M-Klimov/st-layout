@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Review
+        link(href="./css/styles.min.css", rel="stylesheet")
+    body
+        header
+            .header-mini
+                span.back
+                span Написать отзыв
+
+        .content-mini
+            input(type="text", placeholder="Почта").input
+            textarea(rows="12",placeholder="Текст сообщения").input
+            span.button Отправить
+
+        include modules/footer
+
+        script(src="./js/main.min.js")

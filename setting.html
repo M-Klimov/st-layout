@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Setting</title>
+    <link href="./css/styles.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <div class="header-mini"><span class="back"></span><span>Настройки</span></div>
+    </header>
+    <div class="content setting">
+      <div class="row">
+        <div class="checkbox">
+          <input type="checkbox" checked="checked" id="checkbox1"/>
+          <label for="checkbox1">Отключить уведомления</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox2"/>
+          <label for="checkbox2">Не показывать на подозрительных сайтах</label>
+        </div>
+      </div>
+      <div class="row"><span class="face"></span>
+        <div class="col"><span class="button-outline">Загрузить новое фото</span>
+          <p>PNG,JPEG, не более 500х500 px</p>
+        </div>
+      </div>
+      <input class="input" type="text" placeholder="Изменить логин"/>
+      <input class="input" type="email" placeholder="Изменить почту"/>
+      <input class="input" type="phone" placeholder="Изменить телефон"/>
+      <input class="input" type="password" placeholder="Изменить пароль"/>
+      <input class="input" type="password" placeholder="Повторить пароль"/><span class="button">Сохранить изменения</span>
+    </div>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

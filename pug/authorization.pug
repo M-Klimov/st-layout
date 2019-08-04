@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Authorization
+        link(href="./css/styles.min.css", rel="stylesheet")
+    body
+        header
+            .header-mini
+                span.back
+                span Войдите в учетную запись
+                span.menu
+
+        .content-mini.authorization
+
+            span.error.hide Пользователь не найден
+
+            input(type="text", placeholder="Логин").input
+            input(type="password", placeholder="Пароль").input
+
+            .row
+                span.button Вход
+                span.button-outline Регистрация
+            span.recovery Восстановление доступа
+
+        include modules/footer
+
+        script(src="./js/main.min.js")

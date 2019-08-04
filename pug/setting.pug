@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Setting
+        link(href="./css/styles.min.css", rel="stylesheet")
+    body
+        header
+            .header-mini
+                span.back
+                span Настройки
+
+        .content.setting
+
+            .row
+                .checkbox
+                    input(type="checkbox", checked)#checkbox1
+                    label(for="checkbox1") Отключить уведомления
+                .checkbox
+                    input(type="checkbox")#checkbox2
+                    label(for="checkbox2") Не показывать на подозрительных сайтах
+
+            .row
+                span.face
+                .col
+                    span.button-outline Загрузить новое фото
+                    p PNG,JPEG, не более 500х500 px
+
+            input(type="text", placeholder="Изменить логин").input
+            input(type="email", placeholder="Изменить почту").input
+            input(type="phone", placeholder="Изменить телефон").input
+            input(type="password", placeholder="Изменить пароль").input
+            input(type="password", placeholder="Повторить пароль").input
+
+            span.button Сохранить изменения
+
+        script(src="./js/main.min.js")
