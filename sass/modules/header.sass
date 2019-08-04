@@ -8,6 +8,21 @@ header
         background: url('../img/icons/menu.svg')
         cursor: pointer
         display: inline-block
+        &-list
+            display: none
+            &.active
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                position: fixed
+                top: 5.5rem
+                right: 1rem
+                background-color: transparentize($black-color,.2)
+                padding: 1rem
+                li
+                    list-style: none
+                    cursor: pointer
+                    margin-top: .5rem
     .header
         &-top
             padding: 3rem 2rem 1.7rem 3rem

@@ -28,7 +28,12 @@ html(lang="ru")
                 .col
                     span.button-outline Загрузить новое фото
                     p PNG,JPEG, не более 500х500 px
+                    sweetalert2
 
+            select.input
+                option(value="en", selected) English
+                option(value="ru") Русский
+                option(value="ua") Український
             input(type="text", placeholder="Изменить логин").input
             input(type="email", placeholder="Изменить почту").input
             input(type="phone", placeholder="Изменить телефон").input

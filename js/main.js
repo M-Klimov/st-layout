@@ -17,7 +17,16 @@ window.onload = function() {
             }
         }
     }
+    document.querySelector('.menu').onclick = function() {
+        let menuList = document.querySelector('.menu-list');
+        if (menuList.classList == 'menu-list') {
+            menuList.classList.add('active');
+        } else {
+            menuList.classList.remove('active');
+        }
+    }
 }
+
 
 function hideTabContentFrom(index) {
     for (let i = index; i < tabContent.length; i++) {
