@@ -12,3 +12,28 @@
         color: $black-color
         font-weight: 600
         font-size: 1.6rem
+
+.success
+    color: $green
+    border-color: $green
+    &::placeholder
+        color: $green
+.error
+    color: $primary-color
+    border-color: $primary-color
+    &::placeholder
+        color: $primary-color
+
+.eye
+    display: block
+    position: absolute
+    right: 5.5rem
+    margin-top: -4.5rem
+    height: 1.636rem
+    width: 1.8rem
+    opacity: .5
+    transition: .5s
+    cursor: pointer
+    background: url('../img/icons/eye.svg') no-repeat top right
+    &:hover
+        opacity: 1

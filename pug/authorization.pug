@@ -6,19 +6,25 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Authorization
         link(href="./css/styles.min.css", rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/sweetalert2@8")
     body
         header
             .header-mini
                 span.back
                 span Войдите в учетную запись
                 span.menu
+                ul.menu-list
+                    li Настройки
+                    li Выход
 
         .content-mini.authorization
 
-            span.error.hide Пользователь не найден
+            span.error Пользователь не найден
 
-            input(type="text", placeholder="Логин").input
-            input(type="password", placeholder="Пароль").input
+            input(type="text", placeholder="Логин").input.error
+            input(type="password", placeholder="Пароль").input#password1
+            span.eye#password1
+
 
             .row
                 span.button Вход

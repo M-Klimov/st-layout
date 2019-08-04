@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Authorization</title>
     <link href="./css/styles.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   </head>
   <body>
     <header>
-      <div class="header-mini"><span class="back"></span><span>Войдите в учетную запись</span><span class="menu"></span></div>
+      <div class="header-mini"><span class="back"></span><span>Войдите в учетную запись</span><span class="menu"></span>
+        <ul class="menu-list">
+          <li>Настройки</li>
+          <li>Выход</li>
+        </ul>
+      </div>
     </header>
-    <div class="content-mini authorization"><span class="error hide">Пользователь не найден</span>
-      <input class="input" type="text" placeholder="Логин"/>
-      <input class="input" type="password" placeholder="Пароль"/>
+    <div class="content-mini authorization"><span class="error">Пользователь не найден</span>
+      <input class="input error" type="text" placeholder="Логин"/>
+      <input class="input" type="password" placeholder="Пароль" id="password1"/><span class="eye" id="password1"></span>
       <div class="row"><span class="button">Вход</span><span class="button-outline">Регистрация</span></div><span class="recovery">Восстановление доступа</span>
     </div>
     <footer>
