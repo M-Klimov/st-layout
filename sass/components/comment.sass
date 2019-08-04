@@ -12,6 +12,7 @@
         color: $primary-color
         font-size: 1.4rem
         font-weight: 600
+        cursor: pointer
     .edit
         color: $grey-color
         font-weight: 600
@@ -28,6 +29,19 @@
     .comment-test
         margin: .8rem 0 1.6rem 0
         line-height: 150%
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-box-orient: vertical
+        -webkit-line-clamp: 3
+        &:before
+            content: 'Показать полностью'
+            position: absolute
+            font-weight: 600
+            right: 5.7rem
+            margin-top: 5.3rem
+            cursor: pointer
+            color: $grey4-color
     .like
         &:before
             content: ''
@@ -55,6 +69,7 @@
     .date
         color: $grey-color
         font-weight: 600
+        cursor: test
         &:before
             content: ''
             display: inline-block

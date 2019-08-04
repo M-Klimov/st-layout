@@ -1,9 +1,22 @@
-let tab, tabContent;
+let tab, tabContent, arrEye;
 
 window.onload = function() {
     tab = document.getElementsByClassName('tab');
     tabContent = document.getElementsByClassName('tab-content');
+    arrEye = document.getElementsByClassName('eye');
     hideTabContentFrom(1);
+    initTabs();
+
+    for (let i = 0; i < arrEye.length; i++) {
+        arrEye[i].onclick = function(event) {
+            const input = document.getElementById(event.target.id);
+            if (input.type === 'password') {
+                input.type = 'text';
+            } else {
+                input.type = 'password';
+            }
+        }
+    }
 }
 
 function hideTabContentFrom(index) {
@@ -14,16 +27,21 @@ function hideTabContentFrom(index) {
     }
 }
 
-document.querySelector('.tabs').onclick = function(event) {
-    const target = event.target;
-    if (target.className == 'tab') {
-        for (let i = 0; i < tab.length; i++) {
-            if (target == tab[i]) {
-                showTabContent(i);
+function initTabs() {
+    if (document.querySelector('.tabs')) {
+        document.querySelector('.tabs').onclick = function(event) {
+            const target = event.target;
+            if (target.className == 'tab') {
+                for (let i = 0; i < tab.length; i++) {
+                    if (target == tab[i]) {
+                        showTabContent(i);
+                    }
+                }
             }
         }
     }
 }
+
 
 function showTabContent(position) {
     if (tabContent[position].classList.contains('hide')) {
@@ -41,7 +59,7 @@ for (let i = 0; i < sendCode.length; i++) {
         const target = event.target;
         let seconds = 60;
 
-        if (target.classList !== 'button active') {
+        if (target.classList.value !== 'button active' && target.classList.value !== 'button active shake') {
             target.classList = 'button active';
 
             var seconds_timer_id = setInterval(function() {
@@ -53,7 +71,14 @@ for (let i = 0; i < sendCode.length; i++) {
                     target.innerHTML = `Отправить повторно 0:${seconds}`;
                 } else {
                     clearInterval(seconds_timer_id);
+                    target.innerHTML = `Отправить код`;
+                    target.classList = 'button';
                 }
+            }, 1000);
+        } else {
+            target.classList = 'button active shake';
+            setTimeout(() => {
+                target.classList = 'button active';
             }, 1000);
         }
     }
